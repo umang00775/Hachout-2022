@@ -366,10 +366,11 @@ footer p{
 
 .jobRightSection{
     width: 80%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    align-items: center;
     overflow-y: scroll;
 }
 
@@ -661,9 +662,17 @@ footer p{
     color: #e6198e;
 }
 
-
-
-
+.optionInSelection{
+    width: 80%;
+    text-align: left;
+    padding: 3px 8px;
+    margin: 2px 0;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: var(--font1);
+}
 
 
 

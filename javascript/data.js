@@ -313,7 +313,7 @@ module.exports = {
             salary:100000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Amazon",
+            companyName:"Amazon     ",
         },
         {
             // 2
@@ -323,7 +323,7 @@ module.exports = {
             salary:50000,
             skill:"Programming",
             jobType:"parttime",
-            companyName:"Shopify",
+            companyName:"Shopify        ",
         },
         {
             // 3
@@ -333,7 +333,7 @@ module.exports = {
             salary:50000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Mathworks",
+            companyName:"Mathworks      ",
         },
         {
             // 4
@@ -343,7 +343,7 @@ module.exports = {
             salary:100000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Amazon",
+            companyName:"Amazon     ",
         },
         {
             // 5
@@ -352,8 +352,9 @@ module.exports = {
             location:"Ahmedabad",
             salary:5000,
             skill:"House Keeping",
+            kam:"hk",
             jobType:"parttime",
-            companyName:"Vithhal Velocity",
+            companyName:"Vithhal Velocity       ",
         },
         {
             // 6
@@ -363,7 +364,7 @@ module.exports = {
             salary:56000,
             skill:"Teaching",
             jobType:"fulltime",
-            companyName:"Shree Panchatirth Vidhyalaya",
+            companyName:"Shree Panchatirth Vidhyalaya   ",
         },
         {
             // 7
@@ -373,7 +374,7 @@ module.exports = {
             salary:100000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Google",
+            companyName:"Google     ",
         },
         {
             // 8
@@ -383,7 +384,7 @@ module.exports = {
             salary:10000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Desi Tech",
+            companyName:"Desi Tech      ",
         },
         {
             // 9
@@ -393,7 +394,7 @@ module.exports = {
             salary:500000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Rathod PVT. LTD.",
+            companyName:"Rathod PVT. LTD.       ",
         },
         {
             // 10
@@ -403,7 +404,7 @@ module.exports = {
             salary:35000,
             skill:"Teaching",
             jobType:"fulltime",
-            companyName:"Devashya School",
+            companyName:"Devashya School        ",
         },
         {
             // 11
@@ -413,17 +414,17 @@ module.exports = {
             salary: 7000,
             skill:"Cooking",
             jobType:"parttime",
-            companyName:"Patang Hotel",
+            companyName:"Patang Hotel       ",
         },
         {
             // 12
             imgLink:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gqindia.com%2Flive-well%2Fcontent%2F5-places-where-you-can-have-the-best-vada-pav-in-mumbai&psig=AOvVaw3Dy5GBZ8AgFTviBTZEQgue&ust=1664127213777000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPj4sI77rfoCFQAAAAAdAAAAABAD",
             jobTitle:"Cheff",
-            location:"Ganshinagar",
+            location:"Gandhinagar",
             salary: 4500,
             skill:"Cooking",
             jobType:"parttime",
-            companyName:"Lakshay Vadapav",
+            companyName:"Lakshay Vadapav        ",
         },
         {
             // 13
@@ -431,9 +432,9 @@ module.exports = {
             jobTitle:"Cheff",
             location:"Vadodara",
             salary: 5000,
-            skill:"Programming",
+            skill:"Cooking",
             jobType:"fulltime",
-            companyName:"Jay Dabeli",
+            companyName:"Jay Dabeli     ",
         },
         {
             // 14
@@ -441,9 +442,9 @@ module.exports = {
             jobTitle:"Cheff",
             location:"Ahmedabad",
             salary: 10000,
-            skill:"Programming",
+            skill:"Cooking",
             jobType:"fulltime",
-            companyName:"Umang Manchurian",
+            companyName:"Umang Manchurian       ",
         },
         {
             // 15
@@ -453,7 +454,7 @@ module.exports = {
             salary: 80000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"Reliance Digital",
+            companyName:"Reliance Digital       ",
         },
         {
             // 16
@@ -463,7 +464,7 @@ module.exports = {
             salary: 75000,
             skill:"Programming",
             jobType:"fulltime",
-            companyName:"TCS",
+            companyName:"TCS        ",
         },
     ],
 }
