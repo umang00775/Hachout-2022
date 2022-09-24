@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/selectors.css">
+        <title>Certificate of completion</title>
+    </head>
+    <body>
+        <div class="certificateWholeScreen">
+            <div class="certificate">
+                <h1 class="certificateText">Certificate</h1>
+                <h1 class="appreatiation">of appreatiation</h1>
+                <h1 class="apprline">This certificate is presented to </h1>
+                <h1 class="goodName"><%= certData.goodName %></h1>
+                <h1 class="completion">for successfully completion of <span><%= certData.courseName %></span> course</h1>
+                <div class="certificateProvider">
+                    <div class="certDateAndSignatureSection">
+                        <h1 class="certDate"><%= certData.date %></h1>
+                        <h1 class="certDate">Date</h1>
+                    </div>
+                    <div class="certDateAndSignatureSection">
+                        <h1 class="instSign">Umang Rathod</h1>
+                        <h1 class="instSignature">Signature</h1>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

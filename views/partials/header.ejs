@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/selectors.css">
+
+        <script src="https://kit.fontawesome.com/299880b93d.js" crossorigin="anonymous"></script>
+        <title>Courses</title>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header class="navigation">
+            <form action="/" method="get"><button class="logo" type="submit">Queens Site</button></form>
+            <div class="quickLinks">
+                <a href="/courses">Learn Skills</a>
+                <a href="/loan">Financial Help</a>
+                <a href="/jobs">Find Jobs</a>
+                <a href="/login">Login</a>
+                <a href="#appDesign">Helpline</a>
+            </div>
+        </header>
+        <script>
+            window.addEventListener('scroll', function(){
+                const header = this.document.querySelector('header');
+                header.classList.toggle("sticky", this.window.scrollY > 10);
+            });
+        </script>

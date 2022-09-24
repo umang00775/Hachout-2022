@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/selectors.css">
+        <script src="https://kit.fontawesome.com/9b54928ef1.js" crossorigin="anonymous"></script>  <!--Font awesome link-->
+        <title>Courses</title>
+    </head>
+    <body>
+
+        <!-- Header -->
+
+        <header class="navigation">
+            <form action="/" method="get"><button class="logo" type="submit">Me</button></form>
+            <div class="quickLinks">
+                <a href="#webDesign">Web Design</a>
+                <a href="#appDesign">App Design</a>
+                <a href="/signup"><%=    %></a>
+            </div>
+        </header>
+        <script>
+            window.addEventListener('scroll', function(){
+                const header = this.document.querySelector('header');
+                header.classList.toggle("sticky", this.window.scrollY > 10);
+            });
+        </script>
+
+        <!--Based on verified variable-->
+        <div class="warning">
+            <h1 class="warn">Your account is still not verified to acquire loan.</h1>
+            <a href="/verifyAccountForLoan">Please verify your account</a>
+        </div>
+
+    </body>
+</html>
