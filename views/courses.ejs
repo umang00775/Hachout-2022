@@ -1,22 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/selectors.css">
 
+
+        <link rel="stylesheet" href="/styles.css">
+
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9b54928ef1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+        
+        
+
+        <!-- <script src="https://kit.fontawesome.com/299880b93d.js" crossorigin="anonymous"></script> -->
+        <title>Courses</title>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <!-- <header class="navigation">
+            <form action="/" method="get"><button class="logo" type="submit">Queens Site</button></form>
+            <div class="quickLinks">
+                <a href="/courses" style="color: orange;">Learn Skills</a>
+                <a href="/loan" style="color: orange;">Financial Help</a>
+                <a href="/jobs" style="color: orange;">Find Jobs</a>
+                <a href="/login" class="btn login-btn">Login</a>
+                <a href="#appDesign" class="btn login-btn">Helpline</a>
+            </div>
+        </header> -->
+        <nav id="go-to-top" class="navbar navbar-expand-lg selectDisable">
+            <a class="navbar-brand" href="index.html">
+                Queens Site
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item navlink-border">
+                        <a class="nav-link px-4" href=""><i class="fa-solid fa-graduation-cap"></i> Learn Skill</a>
+                    </li>
+                    <li class="nav-item navlink-border">
+                        <div class="dropdown show">
+                            <a class="nav-link px-4 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-landmark-flag"></i> Financial Help
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="/scholarship.html">Scholarships</a>
+                              <a class="dropdown-item" href="#">Government Schemes</a>
+                              <a class="dropdown-item" href="#">Loan Facilities</a>
+                            </div>
+                        </div>
+    
+                    </li>
+                    <li class="nav-item navlink-border">
+                        <a class="nav-link px-4" href="/jobs"><i class="fa-sharp fa-solid fa-user-doctor"></i> Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="/login"><button class="btn login-btn">Login</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="/login"><button class="btn login-btn"><i class="fa-solid fa-phone"></i> Helpline</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            window.addEventListener('scroll', function(){
+                const header = this.document.querySelector('header');
+                header.classList.toggle("sticky", this.window.scrollY > 10);
+            });
+        </script>
 
         <!-- Courses -->
         <h1 style="margin-top: 50px" />
         <div class="coursesWholeScreen">
 
             <div class="courseNavigator">
-                <button>IT</button>
-                <button>Bussiness</button>
-                <button>Personal Development</button>
-                <button>Designing</button>
-                <button>Marketing</button>
-                <button>Health & Fitness</button>
-                <button>Music</button>
+                <button onclick="changeData('it')">IT</button>
+                <button onclick="changeData('bussiness')">Bussiness</button>
+                <button onclick="changeData('personalDevelopment')">Personal Development</button>
+                <button onclick="changeData('designing')">Designing</button>
+                <button onclick="changeData('marketing')">Marketing</button>
+                <button onclick="changeData('healthAndFitness')">Health & Fitness</button>
+                <button onclick="changeData('music')">Music</button>
             </div>
             
-
             
-            <div class="courseContainer">
+            
+            <!-- <div class="courseContainer">
                 <div class="videoIframeLink">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_k_c9nqzKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -28,79 +123,62 @@
                     </h1>
                     <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- Testing -->
-            <div class="courseContainer">
-                <div class="videoIframeLink">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_k_c9nqzKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videoDescr">
-                    <h1 class="lectureName">Heap in one video</h1>
-                    <h1 class="instructorName">Instructor:Aditya Verma</h1>
-                    <h1 class="descriptionOfVideo">
-                        Are you worried about placements/internships? Want to prepare for companies like Microsoft, Amazon & Google? Join the course.
-                    </h1>
-                    <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
-                </div>
+            <div class="finalOutSide">
+                <h1 class="headingForCourse">Top courses in <span class="specialCourse">IT</span></h1>
+                <% for(var i=0; i < 5; i++) { %>
+                    <div class="courseContainer">
+                        <div class="videoIframeLink">
+                            <iframe width="560" height="315" src=<%= data.courses.it[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="videoDescr">
+                            <h1 class="lectureName"><%= data.courses.it[i].lectureName %></h1>
+                            <h1 class="instructorName"><%= data.courses.it[i].instructor %></h1>
+                            <h1 class="descriptionOfVideo">
+                                <%= data.courses.it[i].description %>
+                            </h1>
+                            <a href=<%= data.courses.it[i].link %> target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
+                        </div>
+                    </div>
+                 <% } %>
             </div>
-            <div class="courseContainer">
-                <div class="videoIframeLink">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_k_c9nqzKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videoDescr">
-                    <h1 class="lectureName">Heap in one video</h1>
-                    <h1 class="instructorName">Instructor:Aditya Verma</h1>
-                    <h1 class="descriptionOfVideo">
-                        Are you worried about placements/internships? Want to prepare for companies like Microsoft, Amazon & Google? Join the course.
-                    </h1>
-                    <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
-                </div>
-            </div>
-            <div class="courseContainer">
-                <div class="videoIframeLink">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_k_c9nqzKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videoDescr">
-                    <h1 class="lectureName">Heap in one video</h1>
-                    <h1 class="instructorName">Instructor:Aditya Verma</h1>
-                    <h1 class="descriptionOfVideo">
-                        Are you worried about placements/internships? Want to prepare for companies like Microsoft, Amazon & Google? Join the course.
-                    </h1>
-                    <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
-                </div>
-            </div>
-            <div class="courseContainer">
-                <div class="videoIframeLink">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_k_c9nqzKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videoDescr">
-                    <h1 class="lectureName">Heap in one video</h1>
-                    <h1 class="instructorName">Instructor:Aditya Verma</h1>
-                    <h1 class="descriptionOfVideo">
-                        Are you worried about placements/internships? Want to prepare for companies like Microsoft, Amazon & Google? Join the course.
-                    </h1>
-                    <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
-                </div>
-            </div>
-            <div class="courseContainer">
-                <div class="videoIframeLink">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_k_c9nqzKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videoDescr">
-                    <h1 class="lectureName">Heap in one video</h1>
-                    <h1 class="instructorName">Instructor:Aditya Verma</h1>
-                    <h1 class="descriptionOfVideo">
-                        Are you worried about placements/internships? Want to prepare for companies like Microsoft, Amazon & Google? Join the course.
-                    </h1>
-                    <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a>
-                </div>
-            </div>
-
-
-
         </div>
 
+        <script>
+            function changeData(name){
+                let myData;
+                if(name=="it"){
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">IT</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.it[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.it[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.it[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.it[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+                else if(name=="bussiness"){
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">Bussiness</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.bussiness[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.bussiness[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.bussiness[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.bussiness[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+                else if(name=="personalDevelopment"){
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">Personal Development</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.personalDevelopment[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.personalDevelopment[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.personalDevelopment[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.personalDevelopment[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+                else if(name=="designing"){
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">Designing</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.designing[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.designing[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.designing[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.designing[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+                else if(name=="marketing"){
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">Marketing</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.marketing[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.marketing[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.marketing[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.marketing[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+                else if(name=="healthAndFitness"){
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">Health & Fitness</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.healthAndFitness[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.healthAndFitness[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.healthAndFitness[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.healthAndFitness[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+                else{
+                    myData = `<h1 class="headingForCourse">Top courses in <span class="specialCourse">Music</span></h1><% for(var i=0; i < 5; i++){%> <div class="courseContainer"> <div class="videoIframeLink"> <iframe width="560" height="315" src=<%=data.courses.music[i].iframeLink %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div><div class="videoDescr"> <h1 class="lectureName"><%=data.courses.music[i].lectureName %></h1> <h1 class="instructorName">Instructor: <%=data.courses.music[i].instructor %></h1> <h1 class="descriptionOfVideo"> <%=data.courses.music[i].description %> </h1> <a href="https://youtu.be/_k_c9nqzKN0" target="_blank" rel="noopener noreferrer" class="openInNewTab">Open in new tab</a> </div></div><%}%>`;
+                    document.querySelector(".finalOutSide").innerHTML = myData;
+                }
+            }
+        </script>
     </body>
 </html>

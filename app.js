@@ -26,7 +26,7 @@ app.listen(port,()=>{
 });
 
 app.get('/jobs', (req,res)=>{
-    res.render('jobSearch');
+    res.render('jobSearch', {data: data.jobs});
 });
 
 
@@ -45,7 +45,7 @@ app.get('/certificate', (req,res)=>{
 
 
 app.get('/courses', (req,res)=>{
-    res.render('courses');
+    res.render('courses', {data : data});
 });
 
 app.get('/loan', (req,res)=>{
@@ -55,4 +55,9 @@ app.get('/loan', (req,res)=>{
 
 app.get('/login', (req,res)=>{
     res.render('login');
+});
+
+
+app.get('/helpline', (req,res)=>{
+    res.render('helpline');
 });

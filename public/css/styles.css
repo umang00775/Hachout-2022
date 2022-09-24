@@ -205,25 +205,9 @@ footer p{
     color: blue;
     line-height: 1.2em;
     font-family: var(--font6);
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
     margin-bottom: 35px;
-    /* text-shadow: -1px 0px var(--clr6),
-                 0px 1px var(--clr6),
-                 1px 0px var(--clr6),
-                 0px -1px var(--clr6); */
-    /* -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-.left h1 .first{
-    color: var(--clr2);
-}
-.left h1 .second{
-    color: var(--clr3);
-}
-.left h1 .third{
-    color: var(--clr4);
 }
 
 .bannerLinksSection{
@@ -426,45 +410,56 @@ footer p{
     margin-top: 250px;
 }
 
+.jobRole{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
 .jobCompanyImg{
-    width: 250px;
-    height: 250px;
+    width: 20%;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
-    border-radius: 15px;
+    border-radius: 18px;
     overflow: hidden;
 }
 
+.compName{
+    font-size: 18px;
+    font-weight: 900;
+}
+
 .reqSkills{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 0;
 }
 
 .jobDescr{
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 
 .applyToJobContainer{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .applyButton{
     color: #FFF;
-    padding: 5px 8px;
+    padding: 3px 8px;
     border-radius: 5px;
     background-color: green;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .jobCompanyImg img{
-    width: 248px;
-    height: 248px;
+    width: 148px;
+    height: 148px;
 }
 
 .jobIcons{
@@ -540,6 +535,15 @@ footer p{
     cursor: pointer;
 }
 
+.finalOutSide{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 .courseContainer{
     padding: 10px;
     width: 49%;
@@ -581,7 +585,7 @@ footer p{
 }
 
 .lectureName{
-    font-size: 23px;
+    font-size: 20px;
     color: var(--clr6);
     font-family: var(--font1);
     font-weight: 600;
@@ -589,7 +593,7 @@ footer p{
 }
 
 .descriptionOfVideo{
-    font-size: 14px;
+    font-size: 12px;
     color: var(--clr6);
     font-family: var(--font1);
     font-weight: 400;
@@ -602,7 +606,21 @@ footer p{
     font-family: var(--font1);
     font-weight: 500;
     text-align: left;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+
+.headingForCourse{
+    font-family: var(--font6);
+    font-size: 30px;
+    color: var(--clr6);
+    width: 100%;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.specialCourse{
+    font-family: var(--font6);
+    color: #e6198e;
 }
 
 /* Loan Section */
@@ -640,7 +658,7 @@ footer p{
 /* New extra UI */
 .dot{
     font-size: 100px;
-    color: crimson;
+    color: #e6198e;
 }
 
 
